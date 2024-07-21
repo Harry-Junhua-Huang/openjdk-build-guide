@@ -82,7 +82,7 @@ OpenJDK 64-Bit Server VM (build 11.0.23+9-post-Ubuntu-1ubuntu122.04.1, mixed mod
 Install the required libraries:
 
 ```bash
-sudo apt-get install libfreetype6-dev libcups2-dev libx11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev libasound2-dev libffi-dev
+sudo apt-get install unzip zip libfreetype6-dev libcups2-dev libx11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev libasound2-dev libffi-dev libxrandr-dev libfontconfig1-dev
 ```
 
 These libraries are necessary for building OpenJDK.
@@ -173,7 +173,7 @@ bash configure --with-boot-jdk=$JAVA_HOME --with-jtreg=$JT_HOME
 Run the tests using `jtreg`:
 
 ```bash
-make test-tier1
+make run-test-tier1
 ```
 
 You should see output similar to this:
@@ -220,7 +220,7 @@ make images
 Run the tests:
 
 ```bash
-make test-tier1
+make run-test-tier1
 ```
 
 ### Summary
